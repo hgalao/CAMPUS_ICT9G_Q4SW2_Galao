@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    body, html{
+         background-image: url("bgbbgbgb.png");
+        }
+</style>
+<body><br><br>
+	<img src="coner-removebg-preview.png" width="320px" class="rounded mx-auto d-block"><br><br>
+</div>
+	<div class="container">
+		<form>
+			<div class="container">
+			<div class="row">
+			<div class="col-sm-6">
+				<img src="secondnsns-removebg-preview.png" width="100px" class="rounded mx-auto d-block">
+				<input type="number" class="form-control" id="seconds" placeholder="Enter Number">
+				<div class="text-center"><br>
+				<input type="button" class="btn btn-outline-light" onClick="SecMin()" value="To Minutes">
+			<input type="button" class="btn btn-outline-light" onClick="SecHr()" value="To Hours">
+			<input type="button" class="btn btn-outline-light" onClick="SecDt()" value="To Days">
+		</div>
+		</div>
+
+			<div class="col-sm-6">
+				<img src="mins-removebg-preview.png" width="97px" class="rounded mx-auto d-block">
+				<input type="number" class="form-control" id="minutes" placeholder="Enter Number">
+				<div class="text-center"><br>
+				<input type="button" class="btn btn-outline-light" onClick="MinSec()" value="To Seconds">
+			<input type="button" class="btn btn-outline-light" onClick="MinHr()" value="To Hours">
+			<input type="button" class="btn btn-outline-light" onClick="MinDt()" value="To Days">
+		</div>
+			</div>
+		</form>
+		<div id="result"></div>
+	</div>
+	</div>
+			<form>
+			<div class="container mt-5">
+			<div class="row">
+			<div class="col-sm-6">
+				<img src="hrs-removebg-preview.png" width="80px" class="rounded mx-auto d-block">
+				<input type="number" class="form-control" id="hours" placeholder="Enter Number">
+				<div class="text-center"><br>
+				<input type="button" class="btn btn-outline-light" onClick="HrSec()" value="To Seconds">
+			<input type="button" class="btn btn-outline-light" onClick="HrMin()" value="To Minutes">
+			<input type="button" class="btn btn-outline-light" onClick="HrDt()" value="To Days">
+		</div>
+		</div>
+			<div class="col-sm-6">
+				<img src="dsy-removebg-preview.png" width="63px" class="rounded mx-auto d-block">
+				<input type="number" class="form-control" id="days" placeholder="Enter Number">
+				<div class="text-center"><br>
+				<input type="button" class="btn btn-outline-light" onClick="DtSec()" value="To Seconds">
+			<input type="button" class="btn btn-outline-light" onClick="DtMin()" value="To Minutes">
+			<input type="button" class="btn btn-outline-light" onClick="DtHr()" value="To Hours">
+		</div>
+			</div>
+		</form>
+		<div id="result"></div>
+	</div>
+	</div>
+
+	<script>
+	function SecMin(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function SecHr(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600;		
+		alert(x / y);
+	}
+
+	function SecDt(){
+		var x, y 
+		x = (document.getElementById('seconds').value);
+		y = 86400;		
+		alert(x / y);
+	}
+	function MinSec(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function MinHr(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function MinDt(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 1440;		
+		alert(x / y);
+	}
+function HrSec(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 3600;		
+		alert(x * y);
+	}
+	function HrMin(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function HrDt(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 24;		
+		alert(x / y);
+	}
+		function DtSec(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function DtMin(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function DtHr(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</html>
+</body>
+</script>
+</html>
